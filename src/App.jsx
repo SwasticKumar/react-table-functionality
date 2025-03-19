@@ -1,9 +1,12 @@
-import React from 'react'
-
+import React from "react";
+import DynamicTable from "./components/DynamicTable";
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div className="container mt-4">
+      <h2 className="text-center">Dynamic Table</h2>
+      <DynamicTable />
+    </div>
+  );
+};
 
-export default App
+export default App;

@@ -1,0 +1,43 @@
+.table-container {
+    width: 100%;
+    overflow: auto;
+  }
+  
+  .table {
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    text-align: center;
+    position: relative;
+    white-space: nowrap; /* Prevent text overflow */
+    padding: 10px;
+  }
+  .containerTable{
+    display: flex;
+    justify-content: center
+  }
+  .resize-handle {
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 10px;
+    height: 100%;
+    cursor: col-resize;
+    background-color: transparent;
+  }
+  
+  .resize-handle:hover {
+    background-color: #ccc; 
+  }
+  
+  @media screen and (max-width: 768px) {
+    th{
+        font-size: 14px;
+        text-align: left;
+    }
+    .containerTable{
+        justify-content: start;
+    }
+    
+}
